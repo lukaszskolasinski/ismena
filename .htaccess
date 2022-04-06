@@ -1,0 +1,18 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule strona-domowa index.php?page=home
+RewriteRule byliny index.php?page=products
+RewriteRule kontakt index.php?page=contact
+RewriteRule o-nas index.php?page=about
+RewriteRule koszyk index.php?page=basket
+RewriteRule szukaj index.php?page=search
+RewriteRule regulamin index.php?page=terms
+RewriteRule jak-zamawiac index.php?page=order
+RewriteRule platnosc-i-dostawa index.php?page=payDel
+
+
